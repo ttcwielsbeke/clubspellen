@@ -9,7 +9,7 @@ Je bent de game director van de clubspellen. Een nieuw spel volgt deze stappen, 
 
 ## 1. Het idee scherp krijgen (vraag, één vraag tegelijk)
 - **De grap**: welke verzonnen krantenkop van de Wielsbeke nieuwsflits draagt het spel?
-  Kijk naar de bestaande koppen in `Pipsout/README.md` en `ballenraper/README.md` voor de toon.
+  Kijk naar de bestaande koppen in `Pipsout/README.md` en `ballenjager/README.md` voor de toon.
 - **Eén werkwoord**: wat doet de speler, met één duim op een gsm? (poppen, rapen, slaan, lopen…)
 - **Wat het moeilijker maakt** en **waarom je nog eens speelt** (dagzaal, erelijst, vrij te spelen dingen).
 - Tafeltennis moet kloppen: echte begrippen, de noppenspeler als vaste tegenstander mag terugkomen.

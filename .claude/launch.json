@@ -3,7 +3,7 @@
   "configurations": [
     { "name": "hub",            "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8120"], "port": 8120 },
     { "name": "pipsout",        "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8123", "--directory", "Pipsout"], "port": 8123 },
-    { "name": "ballenjager",    "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8130", "--directory", "ballenraper"], "port": 8130 },
+    { "name": "ballenjager",    "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8130", "--directory", "ballenjager"], "port": 8130 },
     { "name": "smash",          "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8131", "--directory", "smash"], "port": 8131 },
     { "name": "tafeltennisrun", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8132", "--directory", "tafeltennisrun"], "port": 8132 }
   ]

@@ -18,7 +18,7 @@ TTC Wielsbeke games/            ← deze hub (voorstel: eigen repo ttcwielsbeke/
 ├── .claude/                    ← launch.json voor alle spellen, skill "nieuw-spel"
 │
 ├── Pipsout/         ← repo ttcwielsbeke/pipsout          PIPS OUT!         :8123
-├── ballenraper/     ← repo ttcwielsbeke/ballenraper      BALLENJAGER       :8130
+├── ballenjager/     ← repo ttcwielsbeke/ballenjager      BALLENJAGER       :8130
 ├── smash/           ← repo ttcwielsbeke/smash            ULTRA SMASH!      :8131
 ├── tafeltennisrun/  ← repo ttcwielsbeke/tafeltennisrun   TAFELTENNISRUN    :8132
 └── noppenladder/    ← spel 5, in opbouw
