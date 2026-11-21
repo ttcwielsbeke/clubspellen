@@ -112,7 +112,7 @@ of op een drukke achtergrond zetten. Een grap over de sponsor mag, het logo zelf
 
 1200×630 JPEG, gemaakt uit het **echte spel** (`tools/og.html` in elk spel), nooit nagetekend.
 Indeling: het spel links in een chroomkader, de spelnaam rechts (rood + goud), clublogo eronder,
-de drie clubstrepen onderaan. Opslaan via `kit/tools/ogsave.py` (poort 8124, schrijft enkel `og.jpg`).
+de drie clubstrepen onderaan. Opslaan met `python ../kit/tools/ogsave.py`, gestart **vanuit de map van het spel** (poort 8124, schrijft enkel `og.jpg` in die map).
 
 ## 8. Techniek en afspraken
 

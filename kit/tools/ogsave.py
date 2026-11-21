@@ -1,11 +1,12 @@
 """Piepklein endpoint: de generator-pagina (tools/og.html) POST't de kaart hierheen.
-Zo hoeft de afbeelding nergens door een tekstkanaal. Schrijft enkel og.jpg in de repo-root.
+Zo hoeft de afbeelding nergens door een tekstkanaal. Schrijft enkel og.jpg, in de map van waaruit je het start:
+draai het dus vanuit de map van het spel: python ../kit/tools/ogsave.py
 Threaded en met een kort antwoord op GET: een browser die toevallig op deze poort langskomt,
 houdt anders de enige verbinding bezet en de POST van de generator blijft hangen."""
 import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo-root
+OUT = os.getcwd()  # de map van het spel (start het script vanuit die map)
 ALLOWED = {"og.jpg"}
 
 
@@ -48,5 +49,5 @@ class H(BaseHTTPRequestHandler):
 
 srv = ThreadingHTTPServer(("127.0.0.1", 8124), H)
 srv.daemon_threads = True
-print("ogsave luistert op http://127.0.0.1:8124", flush=True)
+print("ogsave luistert op http://127.0.0.1:8124 en schrijft naar %s" % os.path.join(OUT, "og.jpg"), flush=True)
 srv.serve_forever()
