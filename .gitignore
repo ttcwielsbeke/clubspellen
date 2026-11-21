@@ -1,0 +1,12 @@
+# de spellen zijn eigen repo's
+/Pipsout/
+/ballenraper/
+/smash/
+/tafeltennisrun/
+/noppenladder/
+# nieuwe spellen komen hierboven (tools/nieuw-spel.py zet ze er zelf bij)
+
+.claude/settings.local.json
+__pycache__/
+Thumbs.db
+.DS_Store

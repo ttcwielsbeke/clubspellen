@@ -1,0 +1,11 @@
+/* ============================================================
+   {{TITEL}} — wat eigen is aan dit spel
+   Alles wat gedeeld is (kleuren, knoppen, HUD, erelijst, ticker)
+   komt uit kit/tokens.css en kit/arcade.css. Zet hier enkel wat
+   dit spel anders doet. Pas de kit niet in dit spel aan: dat
+   gebeurt in de hub en wordt met tools/sync-kit.py overgezet.
+   ============================================================ */
+
+#hud-time{ flex:1.45; }
+#hud-lives{ flex:0 0 auto; }
+#game{ cursor:crosshair; }

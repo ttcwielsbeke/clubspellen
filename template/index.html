@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>{{TITEL}} — TTC Wielsbeke-Spotit</title>
+<meta name="description" content="{{OMSCHRIJVING}}">
+<meta name="theme-color" content="#0b3a75">
+<link rel="canonical" href="https://ttcwielsbeke.github.io/{{SLUG}}/">
+
+<!-- link-preview (Facebook, WhatsApp): og.jpg is 1200×630, zie tools/og.html -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ttcwielsbeke.github.io/{{SLUG}}/">
+<meta property="og:site_name" content="TTC Wielsbeke-Spotit">
+<meta property="og:locale" content="nl_BE">
+<meta property="og:title" content="{{TITEL}} — het nieuwste videospel van TTC Wielsbeke-Spotit">
+<meta property="og:description" content="{{OMSCHRIJVING}}">
+<meta property="og:image" content="https://ttcwielsbeke.github.io/{{SLUG}}/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="kit/logo/ttc-bat.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kit/tokens.css">
+<link rel="stylesheet" href="kit/arcade.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="mute" type="button" aria-label="Geluid aan of uit">♪</button>
+
+<main id="app">
+
+  <div id="hud">
+    <div class="hudbox"><span class="digits" id="score">0</span></div>
+    <div class="hudbox" id="hud-time"><div class="bar"><div class="bar-fill" id="timebar"></div></div></div>
+    <div class="hudbox" id="hud-lives"><div class="hearts" id="hearts">
+      <i class="heart"></i><i class="heart"></i><i class="heart"></i>
+    </div></div>
+  </div>
+
+  <div id="stage">
+    <canvas id="game" width="440" height="560"></canvas>
+
+    <!-- titelscherm: de nieuwsflits -->
+    <section class="overlay" id="screen-title">
+      <p class="poster-kicker">WIELSBEKE NIEUWSFLITS</p>
+      <h1 class="poster-head">{{KRANTENKOP}}</h1>
+      <div class="logo">{{LOGO_REGEL1}}<span>{{LOGO_REGEL2}}</span></div>
+      <p class="tagline">{{OMSCHRIJVING}}</p>
+      <div class="btnrow">
+        <button class="btn" id="btnStart" type="button">SPELEN</button>
+        <button class="btn ghost" id="btnBoard" type="button">ERELIJST</button>
+      </div>
+      <p class="best">Clubrecord op dit toestel: <span id="best">—</span></p>
+      <div class="clubline">
+        <img class="club" src="kit/logo/clublogo.png" alt="TTC Wielsbeke-Spotit" width="636" height="368">
+        <span class="sponsorbox"><span class="sponsor-label">hoofdsponsor</span>
+        <img class="sponsor" src="kit/sponsor/spotit.png" alt="Spotit" width="426" height="118"></span>
+      </div>
+    </section>
+
+    <!-- einde van de partij -->
+    <section class="overlay hidden" id="screen-over">
+      <h2 class="ov-title over">GEDAAN!</h2>
+      <p class="finalscore" id="final">0</p>
+      <p class="quip" id="quip"></p>
+      <form class="namerow" id="nameForm">
+        <input id="playerName" maxlength="16" placeholder="JOUW NAAM" autocomplete="nickname" aria-label="Jouw naam">
+        <button class="btn small" type="submit">OK</button>
+      </form>
+      <p class="noted hidden" id="noted"></p>
+      <div class="btnrow">
+        <button class="btn" id="btnAgain" type="button">NOG EENS</button>
+        <button class="btn ghost" id="btnShare" type="button">DELEN</button>
+      </div>
+    </section>
+
+    <!-- erelijst -->
+    <section class="overlay hidden" id="screen-board">
+      <h2 class="ov-title">ERELIJST</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab on" type="button" role="tab" aria-selected="true" data-today="1">vandaag</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-today="0">aller tijden</button>
+      </div>
+      <ol class="board" id="board"></ol>
+      <button class="btn ghost" id="btnBack" type="button">TERUG</button>
+    </section>
+  </div>
+
+  <div id="ticker" aria-hidden="true">
+    <span class="tick-label">NIEUWSFLITS</span>
+    <div class="tick-window"><span class="tick-text" id="tickText"></span></div>
+  </div>
+
+</main>
+
+<script src="kit/tokens.js"></script>
+<script src="kit/ttcw.js"></script>
+<script src="kit/board.js"></script>
+<script src="config.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

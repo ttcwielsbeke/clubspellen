@@ -1,0 +1,78 @@
+/* ============================================================
+   TTC Wielsbeke-Spotit — huisstijl voor de clubspellen
+   tokens.css: ENKEL variabelen, geen opmaak.
+   Bron van waarheid voor kleuren, lettertype en vormen.
+   Dezelfde waarden staan voor canvas-tekenwerk in tokens.js.
+   Pas je hier iets aan, pas het daar ook aan.
+   ============================================================ */
+:root{
+
+  /* ---------- 1. Clubkleuren (uit het clublogo) ----------
+     Het échte merk: zwart batje, drie strepen rood-groen-blauw.
+     Gebruik ze voor het logo, clubshirts en de drie strepen.
+     Niet als achtergrond van een heel scherm. */
+  --club-black:   #111111;
+  --club-red:     #e30613;
+  --club-green:   #78be20;
+  --club-blue:    #0092d6;
+  --club-white:   #ffffff;
+
+  /* ---------- 2. Arcadepalet (de spellen) ----------
+     De "nieuwsflits"-look die PIPS OUT!, BALLENJAGER, ULTRA SMASH!
+     en TAFELTENNISRUN delen: nachtblauw, chroom, rood en goud. */
+  --ink:          #02132b;   /* bijna zwart: randen, schaduwen, tekstschaduw */
+  --blue-deep:    #062a56;   /* achtergrond, rand van het scherm */
+  --blue:         #0b3a75;   /* hoofdkleur; ook theme-color */
+  --blue-mid:     #1a5ca8;   /* midden van de achtergrondgloed */
+  --blue-lt:      #2f7fd4;   /* actieve randen, invoervelden */
+  --blue-hi:      #7ec1ff;   /* oplichtende accenten */
+  --chrome:       #9ed4ff;   /* kaders rond HUD, speelveld en knoppen */
+  --red:          #c8242a;   /* hoofdknop, logo-tekst, hartjes */
+  --red-dark:     #8d1519;   /* onderrand van de rode knop */
+  --red-shadow:   #5d0e11;   /* 3D-schaduw onder rode tekst */
+  --gold:         #ffd23f;   /* score, titels, "jij" in de erelijst */
+  --gold-shadow:  #6b4c00;
+  --green:        #5ed13f;   /* tijdbalk vol */
+  --orange:       #ff8a1f;   /* vuur, bonus, ULTRA SMASH */
+  --flash:        #e8634a;   /* het label van de nieuwsflits */
+
+  /* tekst op donker */
+  --text:         #ffffff;
+  --text-soft:    #bcd8f5;   /* gewone uitleg */
+  --text-dim:     #8fb6dd;   /* kleine lettertjes */
+  --text-digits:  #bfe4ff;   /* cijfers in de HUD */
+  --danger-text:  #ff6b6b;   /* "game over", verboden dingen */
+
+  /* vlakken */
+  --well:         #06203f;   /* uitgediepte vakjes (balk, cijfers, invoer) */
+  --well-edge:    #04162c;
+  --overlay:      rgba(4,22,48,.90);
+  --panel:        rgba(6,42,86,.94);
+  --paper:        #f4f7fb;
+
+  /* status (balken) */
+  --ok:           #5ed13f;
+  --warn:         #ffb400;
+  --crit:         #e03026;
+
+  /* ---------- 3. Sponsor ---------- */
+  --spotit-navy:  #00203a;   /* gemeten in sponsor/spotit.png */
+  --spotit-teal:  #18b0be;   /* gemeten in sponsor/spotit.png */
+
+  /* ---------- 4. Lettertypes ---------- */
+  --px:    'Press Start 2P', 'Courier New', monospace;   /* alles in het spel */
+  --serif: Georgia, 'Times New Roman', serif;            /* enkel de krantenkop */
+
+  /* ---------- 5. Vormen ---------- */
+  --radius-lg:  12px;   /* HUD-vakken, speelveld */
+  --radius-md:  10px;   /* knoppen, ticker */
+  --radius-sm:   7px;   /* rijen in de erelijst */
+  --border:      3px;   /* chroomrand */
+  --drop:        0 3px 0 var(--ink);                    /* harde 8-bit schaduw */
+  --gloss: inset 0 2px 0 rgba(255,255,255,.45);         /* glans bovenaan */
+  --sunken: inset 0 2px 3px rgba(0,0,0,.6);             /* uitgediept */
+
+  /* ---------- 6. Maten ---------- */
+  --app-w:      460px;  /* breedte van een staand spel (gsm eerst) */
+  --app-w-wide: 620px;  /* breedte voor een spel dat het hele scherm vult */
+}
