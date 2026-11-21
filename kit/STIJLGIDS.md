@@ -120,7 +120,7 @@ de drie clubstrepen onderaan. Opslaan met `python ../kit/tools/ogsave.py`, gesta
 |---|---|
 | url | `https://ttcwielsbeke.github.io/<slug>/` (GitHub Pages, `main`, `/`) |
 | repo | `github.com/ttcwielsbeke/<slug>`, met `.nojekyll` |
-| localStorage | prefix `ttcw_`: `ttcw_board_<slug>`, `ttcw_sound_<slug>`, `ttcw_name` (gedeeld) |
+| localStorage | `ttcw_<wat>_<slug>` per spel (`ttcw_board_<slug>`, `ttcw_sound_<slug>`, `ttcw_tips_<slug>`, `ttcw_secret_<slug>`), `ttcw_<wat>` gedeeld (`ttcw_name`). Kies de sleutel vóór de eerste publieke versie: hernoemen wist de lokale gegevens van spelers |
 | Supabase | project `aqaikstibteqcdgxtuiw`, tabel `scores_<slug>` met kolom `game`, enkel select + insert voor anon |
 | tijdzone | `Europe/Brussels` voor dagseed en "vandaag" |
 | spelklok | `performance.now()`, niet de rAF-tijdstempel |
