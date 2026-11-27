@@ -12,6 +12,7 @@ Eén plek voor alles wat elk clubspel deelt. Open `kit/index.html` voor de visue
 | **Alle geluid gesynthetiseerd** met Web Audio | geen `.mp3`, geen rechtenvragen |
 | **Erelijst per spel** in hetzelfde Supabase-project, met lokale terugval | werkt ook zonder verbinding |
 | **Dagzaal / dagbaan**: wie vandaag speelt, speelt hetzelfde (seed = datum, klok van Brussel) | eerlijke dagranking zonder server |
+| Uitzondering: NOPPENVEGER heeft altijd willekeurige borden (een vast bord wordt een geheugenspel); 'vandaag' is daar een erelijst die elke dag leeg begint. | een vast bord laat je het spel uit het hoofd leren |
 | **Nederlands (Vlaams)**, `lang="nl"`, `og:locale` `nl_BE` | het is een clubspel |
 
 ## 2. Toon: de Wielsbeke nieuwsflits
@@ -136,7 +137,8 @@ de drie clubstrepen onderaan. Opslaan met `python ../kit/tools/ogsave.py`, gesta
 | 8130 | BALLENJAGER |
 | 8131 | ULTRA SMASH! |
 | 8132 | TAFELTENNISRUN |
-| 8133+ | nieuwe spellen (`tools/nieuw-spel.py` kiest de volgende vrije) |
+| 8134 | NOPPENVEGER |
+| 8135+ | nieuwe spellen (`tools/nieuw-spel.py` kiest de volgende vrije) |
 
 ## 9. De kit gebruiken
 

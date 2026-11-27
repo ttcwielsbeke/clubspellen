@@ -4,6 +4,7 @@
 /smash/
 /tafeltennisrun/
 /noppenladder/
+/noppenveger/
 # nieuwe spellen komen hierboven (tools/nieuw-spel.py zet ze er zelf bij)
 
 .claude/settings.local.json

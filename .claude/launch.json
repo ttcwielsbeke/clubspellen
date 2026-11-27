@@ -70,6 +70,18 @@
         "noppenladder"
       ],
       "port": 8133
+    },
+    {
+      "name": "noppenveger",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8134",
+        "--directory",
+        "noppenveger"
+      ],
+      "port": 8134
     }
   ]
 }
