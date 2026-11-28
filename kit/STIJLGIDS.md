@@ -137,6 +137,7 @@ de drie clubstrepen onderaan. Opslaan met `python ../kit/tools/ogsave.py`, gesta
 | 8130 | BALLENJAGER |
 | 8131 | ULTRA SMASH! |
 | 8132 | TAFELTENNISRUN |
+| 8133 | NOPPENLADDER |
 | 8134 | NOPPENVEGER |
 | 8135+ | nieuwe spellen (`tools/nieuw-spel.py` kiest de volgende vrije) |
 
