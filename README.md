@@ -21,6 +21,7 @@ TTC Wielsbeke games/            ← deze hub (voorstel: eigen repo ttcwielsbeke/
 ├── ballenjager/     ← repo ttcwielsbeke/ballenjager      BALLENJAGER       :8130
 ├── smash/           ← repo ttcwielsbeke/smash            ULTRA SMASH!      :8131
 ├── tafeltennisrun/  ← repo ttcwielsbeke/tafeltennisrun   TAFELTENNISRUN    :8132
+├── noppenveger/     ← repo ttcwielsbeke/noppenveger      NOPPENVEGER       :8134
 └── noppenladder/    ← spel 5, in opbouw
 ```
 

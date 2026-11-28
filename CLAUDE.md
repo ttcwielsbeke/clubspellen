@@ -5,7 +5,7 @@ Lees eerst `kit/STIJLGIDS.md`: daar staan kleuren, toon, onderdelen, poorten en 
 
 ## Structuur
 - `kit/` — de enige bron van de huisstijl. `template/` — sjabloon voor een nieuw spel.
-- `Pipsout/`, `ballenjager/`, `smash/`, `tafeltennisrun/`, `noppenladder/` (spel 5, in opbouw), `noppenveger/` (spel 6, in opbouw) — **elk een eigen git-repo** (remote op
+- `Pipsout/`, `ballenjager/`, `smash/`, `tafeltennisrun/`, `noppenladder/` (spel 5, in opbouw), `noppenveger/` (spel 6, live) — **elk een eigen git-repo** (remote op
   github.com/ttcwielsbeke). Commit in de juiste repo; deze hub negeert die mappen.
 - BALLENJAGER heette eerst BALLENRAPER (een speler vond die naam niet ok). Intern blijft de oude naam: Supabase-tabel `scores_ballenraper`, `game: 'ballenraper'` in config.js en de localStorage-sleutels. Niet hernoemen, anders zijn de scores weg. `ttcwielsbeke.github.io/ballenraper/` is een doorverwijzing (repo `ttcwielsbeke/ballenraper`), mag weg vanaf maart 2027.
 
